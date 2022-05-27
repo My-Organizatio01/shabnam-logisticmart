@@ -1,0 +1,16 @@
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contact-bar[_ngcontent-serverApp-c45] {
+    position: absolute;
+    right: 0;
+    width: 60%;
+    padding: 2px 10px;
+    color: #fff;
+    z-index: 99;
+    background: linear-gradient(45deg,#ffffff 0%,#ffffff 4%,#0072bc 4%,#0072bc 4%,#0072bc 100%);
+}
