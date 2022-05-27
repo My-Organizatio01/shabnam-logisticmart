@@ -1,16 +1,141 @@
-.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+.head {
+    min-height: 90px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    position: relative;
+    width: 100%;
+    display: table;
+    position: sticky;
+    top: -35px;
+    z-index: 998;
+    transition: .5s;
+}
+
+.container-fluid {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
-.contact-bar[_ngcontent-serverApp-c45] {
+
+.contact-bar {
     position: absolute;
     right: 0;
     width: 60%;
     padding: 2px 10px;
     color: #fff;
     z-index: 99;
-    background: linear-gradient(45deg,#ffffff 0%,#ffffff 4%,#0072bc 4%,#0072bc 4%,#0072bc 100%);
+    background: linear-gradient(45deg, #ffffff 0%, #ffffff 4%, #0072bc 4%, #0072bc 4%, #0072bc 100%);
 }
+
+.contact-bar img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.contact-bar a {
+    color: #fff;
+    text-align: center;
+    justify-content: end;
+    display: flex;
+    margin-right: 4rem;
+    padding: 2px;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+.contact-bar small {
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-left: 70px !important;
+}
+
+.logo {
+    font-size: 18px;
+    color: red;
+    padding: 5px 15px;
+    border: 0px solid #fff;
+    margin-top: 5px;
+    float: left;
+}
+
+.header-right {
+    position: relative;
+    display: flex;
+}
+
+.head-search {
+    position: absolute;
+    left: 12%;
+    top: 40px;
+}
+
+.head-search ::before {
+    content: "";
+    background-image: url(image/search.png);
+    color: #000;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    right: 9px;
+    top: 8px;
+    z-index: 999;
+    background-repeat: no-repeat;
+}
+
+.autocomplete {
+    width: 280px;
+}
+
+.autocomplete-container {
+    box-shadow: 0 0 2px #0072bc, 0 0 1px #0072bc, 0 1px 1px -1px #0072bc !important;
+    border-radius: 30px;
+    height: 38px !important;
+    width: 280px;
+}
+
+.input-container input {
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    border-radius: 18px;
+    margin: 0em;
+}
+
+.menu {
+    /* display: flex; */
+    margin-top: 33px;
+    padding: 11px 0;
+    justify-content: space-between;
+}
+
+.menu div {
+    margin-left: 380px;
+}
+
+.btn-primary {
+    border: none;
+    margin: 0 30px 0 30px;
+    /* margin-left: 100px; */
+}
+
+/* .contact-bar[_ngcontent-serverApp-c45] {
+    position: absolute;
+    right: 0;
+    width: 60%;
+    padding: 2px 10px;
+    color: #fff;
+    z-index: 99;
+    background: linear-gradient(45deg, #ffffff 0%, #ffffff 4%, #0072bc 4%, #0072bc 4%, #0072bc 100%);
+} */
